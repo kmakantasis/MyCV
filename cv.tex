@@ -1,0 +1,569 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{lastpage}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\fancyhf{}
+ 
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+
+\usepackage{longtable}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 				%better formatting of the A4 page
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{supertabular} 				%for Grades
+\usepackage{titlesec}					%custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Fontin-SmallCaps.otf,
+BoldFont = Fontin-Bold.otf,
+ItalicFont = Fontin-Italic.otf
+]
+{Fontin.otf}
+%%%
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+%Italian hyphenation for the word: ''corporations''
+\hyphenation{im-pre-se}
+
+%-------------WATERMARK TEST [**not part of a CV**]---------------
+\usepackage[absolute]{textpos}
+
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+
+%WATERMARK TEST [**not part of a CV**]---------------
+%\font\wm=''Baskerville:color=787878'' at 8pt
+%\font\wmweb=''Baskerville:color=FF1493'' at 8pt
+%{\wm 
+%	\begin{textblock}{1}(0,0)
+%		\rotatebox{-90}{\parbox{500mm}{
+%			Typeset by Alessandro Plasmati with \XeTeX\  \today\ for 
+%			{\wmweb \href{http://www.aleplasmati.comuv.com}{aleplasmati.comuv.com}}
+%		}
+%	}
+%	\end{textblock}
+%}
+
+\pagestyle{fancy} % non-numbered pages
+
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Konstantinos \textsc{Makantasis} \\ \vspace{0.1in} \Large Curriculum Vitae
+	}\bigskip\par}
+
+
+\textbf{Short Bio:} Dr Konstantinos Makantasis received his Computer Engineering diploma from the Technical University of Crete, and his PhD on Computer Vision and Machine Learning from the same University. He has been a Post-Doctoral Researcher at the Technical University of Crete, at KIOS CoE, University of Cyprus, and at the Institute of Digital Games, University of Malta. He has been twice an Early Stage Researcher - Marie Curie Fellow (4D-CH-World MSCA IAPP project), while in February 2020 he has been \textbf{awarded the prestigious Marie Curie Individual Fellowship} grant to work on the development of tensor-based and preference learning models. He has coordinated the proposal preparation of \textbf{six successfully funded} European and Greek research projects. His research focuses on the crossroads of Machine and Statistical Learning, Image Processing, and Computer Vision for developing state-of-the-art methodologies and cutting-edge technologies in data analytics and decision making. He has published \textbf{more than 40} journal and international conference peer-reviewed papers in the research areas mentioned above. His publications have been cited more than \textbf{800 times} (h-index:13 and i10-index:20), in \textbf{less than 4 years} after the completion of his doctoral work. 
+
+%\vspace{0.1in}
+%--------------------SECTIONS-----------------------------------
+%Section: Personal Data
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+    \textsc{Place and Date of Birth:} & Athens, Greece  | 04 March 1984 \\
+    \textsc{Address:}   & "Grazia Plena", Flat 1, Triq Il-Gostra, MSD2341, Msida, Malta \\
+    %\textsc{Address:}   & Andrea Kalvou 7, Aglantzia, 2107, Nicosia, Cyprus \\
+    \textsc{Phone:}     & +356 7920 7870 \\
+    \textsc{Email:}     & \href{mailto:konstantinos.makantasis@um.edu.mt}{konstantinos.makantasis@um.edu.mt} \\
+    \textsc{Website:}     & \href{http://www.kmakantasis.gr}{kmakantasis.gr}\\
+    \textsc{Orcid Id:} & \href{https://orcid.org/0000-0002-0889-2766}{orcid.org/0000-0002-0889-2766}
+\end{tabular}
+
+\vspace{0.1in}
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{11cm}}	
+23/01/2012 - 19/07/2016 & \textbf{Ph.D. Degree} in Computer Vision and Machine learning \\
+& Thesis: \textit{Detection and semantic analysis of objects and events through} \\
+& \hspace{0.43 in} \textit{visual cues} \\
+& Advisor: Anastasios Doulamis \\
+& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece \\
+\multicolumn{2}{c}{} \\		
+
+%2015 - 2016 & 4D-CH-World Marie Curie Fellow - Early Stage Researcher \\ 
+%& Technical University of Crete, Greece\\
+%& - Development of a deep learning  approach for building recognition\\
+%& - Development of an online indexing structure for image data\\
+%\multicolumn{2}{c}{} \\
+
+
+26/10/2009 - 09/11/2011 & \textbf{M.Eng.} in Engineering Management \\
+& Thesis: \textit{Persons' fall detection through visual cues} \\
+& Advisor: Anastasios Doulamis \\
+& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece \\
+\multicolumn{2}{c}{} \\		
+
+02/10/2001 - 07/03/2008 &\textbf{Diploma (3+2 years)} in Electronic and Computer Engineering \\
+& Thesis: \textit{Human face detection and tracking using AIBO robots} \\
+& Advisor: Michail Lagoudakis \\
+& School of Electrical and Computer Engineering, \textbf{Technical University of Crete}, Greece \\
+\multicolumn{2}{c}{} \\		
+\end{tabular}
+
+%\vspace{0.1in}
+%Section: Work Experience at the top
+\section{Professional Experience}
+\begin{longtable}{r|p{11cm}}	
+	05/11/2018 - 04/02/2020 & \textbf{Research Support Officer III} (part-time)\\
+	& Institute of Digital Games, \textbf{University of Malta}, Malta\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of tensor-based and deep learning models for affective computing.}\\
+	\multicolumn{2}{c}{} \\		
+	
+	01/05/2018 - 31/01/2020 & \textbf{Postdoctoral Researcher} for the Greek STOHOS project (part-time) \\
+	& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of driving policies for autonomous road vehicles.}\\
+	\multicolumn{2}{c}{} \\	
+	
+	01/05/2018 - 31/07/2018 & \textbf{Postdoctoral Research Associate} (part-time) \\
+	& KIOS Center of Excellence, \textbf{University of Cyprus}, Cyprus\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of deep reinforcement learning driving policies for autonomous vehicles.}\\
+	&\footnotesize{- Development of nonlinear tensor-based classifiers for high-order data analysis.}\\
+	\multicolumn{2}{c}{} \\	
+	
+	22/09/2017 - 30/04/2018 & \textbf{Postdoctoral Research Associate} \\
+	& KIOS Center of Excellence, \textbf{University of Cyprus}, Cyprus\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of deep reinforcement learning driving policies for autonomous vehicles.}\\
+	&\footnotesize{- Development of nonlinear tensor-based classifiers for high-order data analysis.}\\
+	\multicolumn{2}{c}{} \\	
+	
+	01/11/2016 - 31/08/2017 & \textbf{Postdoctoral Researcher} for the European ERC-AdG TRAMAN21  \\
+	& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of driving policies for autonomous vehicles via optimal control.}\\ 
+	%& \footnotesize{- Principal Investigator: Markos Papageorgiou} \\
+	\multicolumn{2}{c}{} \\
+	
+	15/04/2016 - 14/10/2016 & \textbf{Marie Curie Fellow - ESR} for 4D-CH-World MSCA IAPP project \\
+	& \textbf{7Reasons Medien GmbH}, Vienna, Austria\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of a deep learning approach for building recognition.}\\
+	\multicolumn{2}{c}{} \\	
+	
+	27/04/2015 - 26/10/2015 & \textbf{Marie Curie Fellow - ESR} for 4D-CH-World MSCA IAPP project \\
+	& \textbf{EXUS Ltd.}, London, UK\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	&\footnotesize{- Development of an online indexing structure for image data.}\\
+	\multicolumn{2}{c}{} \\	
+	
+	01/01/2014 - 31/07/2014 & \textbf{Research Associate} for the European FP7 Project eVACUATE \\ 
+	& Institute of Communications and Computer Systems, \textbf{National Technical University of Athens}, Greece\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	& \footnotesize{- Data acquisition.}\\
+	& \footnotesize{- Development of computer vision techniques applicable to evacuate systems.}\\
+	& \footnotesize{- Thermal and hyperspectral image and video processing.}\\
+	\multicolumn{2}{c}{} \\
+	
+	01/10/2012 - 31/09/2013 & \textbf{Research Associate} for the Interreg project E-PARK \\ 
+	& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	& \footnotesize{- Analysis of end-users' requirements.}\\
+	& \footnotesize{- Dissemination of project outcomes to stakeholders and international conferences.}\\
+	& \footnotesize{- Participation in project coordination meetings.}\\
+	\multicolumn{2}{c}{} \\
+	
+	01/10/2012 - 31/09/2013 & \textbf{Research Associate} for the Interreg project POSEIDON \\ 
+	& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+	& \textit{\small{Main role and responsibilities:}} \\
+	& \footnotesize{- Development of video processing techniques to analyze data from camera arrays.}\\
+	& \footnotesize{- Integration, testing and demonstration of POSEIDON system.}\\
+	& \footnotesize{- Participation in project coordination meetings.}\\
+	\multicolumn{2}{c}{} \\
+\end{longtable}
+
+%Section: Teaching experience
+\section{Teaching Experience}
+\begin{longtable}{r|p{11cm}}
+05/02/2020 - present& \textbf{Adjunct lecturer}\\
+& Institute of Digital Games, \textbf{University of Malta}, Malta \\
+& Course: a) Player modeling (Spring 2020) - postgraduate $\sim$ 10 students\\
+& \hspace{0.475in} \href{https://bit.ly/2Fv6GRy}{Slides} - \href{https://bit.ly/2Wt5ftS}{Indicative notes} - \href{http://www.kmakantasis.gr/Trees.html}{Python notebook}\\
+\multicolumn{2}{c}{} \\
+	
+01/02/2019 - 31/01/2020& \textbf{Teaching assistant}\\
+& Institute of Digital Games, \textbf{University of Malta}, Malta \\
+& Course: a) Game AI (Fall 2019)- postgraduate $\sim$ 10 students\\
+& \hspace{0.475in} b) Player modeling (Spring 2019) - postgraduate $\sim$ 5 students\\
+& \hspace{0.475in} \href{https://bit.ly/2Fv6GRy}{Slides} - \href{https://bit.ly/2Wt5ftS}{Indicative notes} - \href{http://www.kmakantasis.gr/Trees.html}{Python notebook}\\
+\multicolumn{2}{c}{} \\
+	
+01/10/2013 - 31/01/2014 & \textbf{Teaching assistant}\\
+& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+& Course: a) Advance machine learning - postgraduate $\sim$ 20 students\\
+\multicolumn{2}{c}{} \\
+
+01/10/2012 - 31/01/2013 & \textbf{Teaching assistant}\\
+& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+& Course: a) Computer programming- undergraduate $\sim$ 60 students\\
+\multicolumn{2}{c}{} \\
+
+01/10/2011 - 31/01/2012 & \textbf{Teaching assistant}\\
+& School of Mineral Resources Engineering, \textbf{Technical University of Crete}, Greece\\
+& Course: a) Remote sensing - undergraduate $\sim$ 60 students\\
+& \hspace{0.475in} b) Computer programming- undergraduate $\sim$ 60 students\\
+\multicolumn{2}{c}{} \\
+
+\end{longtable}
+
+%Section: Supervision
+\section{Mentoring Activities}
+\begin{longtable}{r|p{11cm}}
+10/11/2018 - Present & David Melhart, PhD candidate student\\
+& Institute of Digital Games, \textbf{University of Malta}, Malta,\\ 
+& \small{\textbf{PhD supervision assistant}: \textit{"Preference learning methodologies for affective computing"}} \\
+\multicolumn{2}{c}{} \\	
+
+01/06/2018 - 31/07/2018 & Marios Kelepeshis, Undergraduate Student \\
+& KIOS Center of Excellence, \textbf{University of Cyprus}, Cyprus,\\
+& \small{\textbf{Undergraduate Research Opportunities Program}: \textit{"Deep reinforcement learning for coordinated ramp-metering"}} \\
+\multicolumn{2}{c}{} \\	
+
+01/03/2014 - 31/01/2015 & Christos Kontopoulos, Undergraduate Student\\ 
+&School of Rural and Surveying Engineering, \textbf{National Technical University of Athens}, Greece \\
+& \small{\textbf{Diploma thesis supervision assistant}: \textit{"Deep learning and Convolutional Neural Networks for the classification of hyperspectral data"}} \\
+\end{longtable}
+
+
+%Section: Honors and awards
+\section{Honors \& Awards}
+\begin{longtable}{r p{12cm}}
+HA-1 & \textbf{Widening Fellowship} (MSCA-IF-EF-ST-2019) \small{for the H2020 project TAMED: Tensor-bAsed Machine learning towards genEral moDels of affect (duration: 24 months - budget: €148,049.28)}\\
+\multicolumn{2}{c}{} \\	
+
+HA-2 & \textbf{Seal of Excellence} \small{for the H2020-MSCA-IF-2018 proposal TAMED: Tensor-bAsed Machine learning towards genEral moDels of affect [\href{https://bit.ly/2UMoiPl}{pdf}]}\\
+\multicolumn{2}{c}{} \\	
+
+HA-3 & \textbf{Best Paper Award} \\
+&\small{Eftychios Protopapadakis, Anastasios Doulamis, Konstantinos Makantasis, and Athanasios Voulodimos. ''A semisupervised approach for industrial workflow recognition''. in \textit{Proceedings of the Second International Conference on Advanced Communications and Computation (INFOCOMP), pp.21-26, 2012}}\\
+\end{longtable}
+
+%\vspace{0.05in}
+%Section: Additional Information
+\section{Additional Information}
+\begin{longtable}{r p{11cm}}
+\textbf{Postgraduate} & \textbf{Advanced machine learning} (2014)\\
+\textbf{courses} & School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+& Instructor: Associate Prof. Anastasios Doulamis \vspace{0.05in}\\
+
+& \textbf{Multi-criteria decision systems} (2011)\\
+& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+& Instructor: Associate Prof. Michael Doumpos  \vspace{0.05in}\\
+
+& \textbf{Genetic algorithms and large scale systems optimization} (2011)\\
+&School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+& Instructor: Assistant Prof. Ioannis Marinakis \\
+
+\vspace{0.01in}\\
+
+\textbf{Short courses}& \textbf{Dynamic traffic flow modeling and control} (2016)\\
+& School of Production Engineering and Management, \textbf{Technical University of Crete}, Greece\\
+& Instructor: Prof. Markos Papageorgiou \\
+
+\vspace{0.01in}\\
+
+
+%\vspace{0.1in}\\
+
+%\textbf{Self-study}& - Vapnik, Vladimir Naumovich. Statistical learning theory. Vol. 1. \\
+%& \hspace{0.05in} New York: Wiley, 1998. \\
+%& \hspace{0.05in} Field: \textbf{Statistical learning} \\
+%\\
+%& - Shalev-Shwartz, Shai, and Shai Ben-David. Understanding machine\\ 
+%& \hspace{0.05in} learning: From theory to algorithms. Cambridge university press,\\
+%& \hspace{0.05in} 2014. \\
+%& \hspace{0.05in} Field: \textbf{Statistical learning} \\
+%\\
+%& - Resnick, Sidney I. A probability path. Springer Science \& Business \\ 
+%& \hspace{0.05in} Media, 2013.\\
+%& \hspace{0.05in} Field: \textbf{Probability theory} \\
+%\\
+%& - Capinski, Marek, and Peter Kopp. Measure, integral and probability.  \\ 
+%& \hspace{0.05in} Springer Science \& Business Media, 2013.\\
+%& \hspace{0.05in} Field: \textbf{Measure theory} \\
+%\\
+%& - Kolmogorov, A. Nikolaevich, and Sergeı V. Fomin. Introductory real \\ 
+%& \hspace{0.05in} analysis. Courier Corporation, 2012.\\
+%& \hspace{0.05in} Field: \textbf{Real analysis} \\
+
+%\vspace{0.1in}\\
+
+\textbf{Proposal writing}
+&Coordinated the proposal preparation of the European funded Marie Curie IF \textbf{TAMED} project \small{\textit{"Tensor-bAsed Machine learning towards genEral moDels of affect"}} \vspace{0.05in}\\
+
+&Coordinated the proposal preparation of the Greek funded ESPA: 2014-2020 (EDBM34) \textbf{STOHOS} project \small{\textit{"Development of Optimal Driving Policies for Autonomous Vehicles that move on Highways"} \href{http://http://stohos.tuc.gr}{project website}} \vspace{0.05in}\\
+
+&Coordinated the proposal preparation of the European funded Marie Curie RISE \textbf{Terpsichore} project \small{\textit{"Transforming Intangible Folkloric Performing Arts into Tangible Choreographic Digital Objects"} \href{http://terpsichore-project.eu}{project website}} \vspace{0.05in}\\
+
+&Coordinated the proposal preparation of the European funded Marie Curie ITN \textbf{ITN-DCH} project \small{\textit{"Innovative Training Network for Digital Cultural Heritage"} \href{http://www.itn-dch.eu}{project website}} \vspace{0.05in}\\
+
+&Involved in the proposal preparation of the European FP7-SEC Large-scale integrating project \textbf{eVACUATE} project \small{\textit{"A holistic, scenario-independent, situation-awareness and guidance system for sustaining the Active Evacuation Route for large crowds"} \href{http://www.evacuate.eu}{project website}} \vspace{0.05in}\\
+
+&Coordinated the proposal preparation of the European funded Marie Curie IAPP \textbf{4D-CH-World} project \small{\textit{Four Dimensional Cultural Heritage World} \href{http://www.4d-ch-world.eu}{project website}} \\
+
+\vspace{0.01in}\\
+
+\textbf{Committees}
+& - Labs and Competition Committee member for KIOS Graduate Summer \\ 
+\textbf{\& Events}& \hspace{0.05in} School on Intelligent Systems and Control (MSc/PhD level) \href{https://www.kios.ucy.ac.cy/summer-school/?page_id=1794}{website}\\
+& - Member of KIOS CoE Open Access Committee \\
+& - Volunteer for the 2018 European Control Conference\\
+& - Member of the Program Committee for the  29th International Joint\\
+& \hspace{0.05in} Conference on Artificial Intelligence (IJCAI 2020)\\
+& - Member of the Program Committee for the 8th International Confe-\\
+& \hspace{0.05in} rence on Affective Computing and Intelligent Interaction (ACII 2019)\\
+& - Member of the International Scientific Committee for the Interna-\\
+& \hspace{0.05in} tional Conference on Digital Heritage (EUROMED 2016 and 2018)\\
+& - Member of the Program Committee for the 9th International Confe-\\
+& \hspace{0.05in} rence on Virtual Worlds and Games for Serious Application (VS-GAMES\\ &\hspace{0.05in} 2017)
+
+\vspace{0.01in}\\
+
+\textbf{Editorial Board}
+& - MDPI Open Access Journal on Sustainability
+
+\vspace{0.01in}\\
+
+\textbf{Reviewer}
+& - IEEE Transaction on Pattern Analysis and Machine Intelligence\\
+& - IEEE Transactions on Circuits and Systems for Video Technology \\
+& - IEEE Transactions on Geoscience and Remote Sensing \\
+& - IEEE Journal of Selected Topics in Applied Earth Observations and\\
+& \hspace{0.05in} Remote Sensing\\
+& - IEEE Signal Processing Letters \\
+& - IEEE Transactions on Control Systems Technology \\
+& - IEEE Access \\
+& - Elsevier Computer Vision and Image Understanding Journal\\
+& - Springer Journal on Multimedia, Tools and Applications \\
+& - MDPI Open Access Journal on Remote Sensing \\
+& - IAPR International Conference on Pattern Recognition \\
+& - IEEE International Conference on Image Processing \\
+& - IEEE International Geoscience and Remote Sensing Symposium \\
+& - IEEE International Conference on Affective Computing and Intelligent \\
+& \hspace{0.05in} Interaction \\
+& - ECAI European Conference on Artificial Intelligence
+
+\vspace{0.05in}\\
+
+\textbf{Computer skills}
+%& - Operating systems: Windows XP/Vista/7/8, Linux, Mac OS X \\
+& - Programming languages: Python, C, C++, Java \\
+& - Signal and image processing: Matlab, Octave, OpenCV \\
+& - Deep learning frameworks: Keras, Tensorflow, PyTorch \\
+& - Database management systems: MySQL, PostgreSQL, PostGIS 
+%& - Design software: Photoshop CS2/CS3/CS4/CS5/CS6, GIMP
+\end{longtable}
+
+%\newpage
+%Section: Research Interests
+\section{Research Interests}
+\begin{itemize}
+	\item High-order signal and image processing [J-13, J-14, C-24, C-25, C-28, C-29]
+	\item Analysis of images beyond the visible spectrum [J-11, C-13, C-14, C-16, C-17, C-19]
+	\item Vision-based tracking and activity recognition [J-1, J-8, J-9, C-1, C-3, C-4, C-5, C-7, C-8, C-18]
+	\item Content-based image retrieval [J-7, C-8, C-10, C-21]
+	\item Affective Computing \& User modeling [J-14, C-29]
+	\item Autonomous vehicles [J-15, J-12, C-26]
+\end{itemize}
+
+\vspace{0.2in}
+%Section: Research Data
+\section{Research Data}
+\begin{tabular}{rl}
+\textbf{Journal Papers:}& 15\\
+\textbf{Conference Papers:}& 29\\
+\textbf{Citations:}& 831 (\href{https://scholar.google.gr/citations?hl=en&user=GYOp9v8AAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar}, February 2020)\\
+							%& 467 (Scopus, 15 September 2019)\\
+\textbf{h-index:}& 13 (\href{https://scholar.google.gr/citations?hl=en&user=GYOp9v8AAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar}, February 2020)\\
+					     %& 10 (Scopus, 15 September 2019)\\
+\textbf{i10-index:}& 20 (\href{https://scholar.google.gr/citations?hl=en&user=GYOp9v8AAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar}, February 2020)\\
+\end{tabular}
+
+\vspace{0.2in}
+%Section: Publications
+\section{Publications}
+\begin{longtable}{r p{11cm}}
+%\textbf{Ph.D. Thesis} &  \\
+%Title &\small{Konstantinos Makantasis. ''Detection and semantic analysis of objects and events through visual cues''. \textit{PhD thesis, Technical University of Crete, School of Production Engineering and Management, 2016}}\\
+% \multicolumn{2}{c}{} \\
+\textbf{Journals} &  \\
+J-15 &\small{\underline{Konstantinos Makantasis}, Maria Kontorinaki, and Ioannis Nikolos. ''A Deep Reinforcement Learning Driving Policy for Autonomous Vehicles''. \textit{IET Intelligent Transportation Systems, vol.14(1), pp.13-24, 2019}}\\
+\multicolumn{2}{c}{} \\
+J-14 &\small{Antonis Nikitakis \underline{Konstantinos Makantasis}, Nikolaos Tampouratzis, and Ioannis Papaefstathiou. ''A Unified Novel Neural Network Approach and a Prototype Hardware Implementation for Ultra-Low Power EEG Classification''. \textit{IEEE Transactions on Biomedical Circuits and Systems, vol.13(4), pp.670-681, 2019}}\\
+\multicolumn{2}{c}{} \\
+J-13 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, Nikolaos Doulamis, and Antonis Nikitakis. ''Tensor-based classification models for hyperspectral data analysis''. \textit{ IEEE Transactions on Geoscience and Remote Sensing, vol.56(12), pp.6884-6898, 2018}}\\
+ \multicolumn{2}{c}{} \\
+ J-12 &\small{\underline{Konstantinos Makantasis} and Markos Papageorgiou. ''Motorway path planning for automated road vehicles based on optimal control methods''. \textit{Transportation Research Record, vol. 2672(19), pp.112-123, 2018}}\\
+ \multicolumn{2}{c}{} \\
+J-11 &\small{\underline{Konstantinos Makantasis}, Antonis Nikitakis, Anastasios Doulamis, Nikolaos Doulamis, and Yannis Papaefstathiou. ''Data-driven background subtraction algorithm for in-camera acceleration in thermal imagery''. \textit{IEEE Transactions on Circuits and Systems for Video Technology, vol.28(9), pp.2090-2104, 2017}}\\
+ \multicolumn{2}{c}{} \\
+J-10 &\small{Athanasios Voulodimos, Nikolaos Doulamis, Dieter Fritsch, \underline{Konstantinos} \underline{Makantasis}, Anastasios Doulamis, and Michael Klein. ''Four-dimensional reconstruction of cultural heritage sites based on photogrammetry and clustering''. \textit{Journal of Electronic Imaging, vol.26(1):011013, 2017}}\\
+ \multicolumn{2}{c}{} \\
+J-9 &\small{\underline{Konstantinos Makantasis}, Eftychios Protopapadakis, Anastasios Doulamis, Nikolaos Doulamis, and Nikolaos Matsatsinis. ''3d measures exploitation for a monocular semisupervised fall detection system''. \textit{Multimedia Tools \& Applications, vol.75(22), pp.15017-15049, 2016}}\\
+ \multicolumn{2}{c}{} \\
+J-8 &\small{\underline{Konstantinos Makantasis}, Eftychios Protopapadakis, Anastasios Doulamis, and Nikolaos Matsatsinis. ''Semi-supervised vision-based maritime surveillance system using fused visual attention maps''. \textit{Multimedia Tools \& Applications, vol.75(22), pp.15051-15078, 2016}}\\
+ \multicolumn{2}{c}{} \\
+J-7 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, Nikolaos Doulamis, and Marinos Ioannides. ''In the wild image retrieval and clustering for 3d cultural heritage landmarks reconstruction''. \textit{Multimedia Tools \& Applications, vol.75(7), pp.3593-3629, 2016}}\\
+ \multicolumn{2}{c}{} \\
+J-6 &\small{Georgia Kyriakaki, Anastasios Doulamis, Nikolaos Doulamis,Marinos Ioannides, \underline{Konstantinos Makantasis}, Eftichios Protopapadakis, Andreas Hadjiprocopis, Konrad Wenzel, Dieter Fritsch, Michael Klein, et al. ''4d reconstruction of tangible cultural heritage objects from web-retrieved images''. \textit{International Journal of Heritage in the Digital Era, vol.3(2), pp.431–452, 2014}}\\
+ \multicolumn{2}{c}{} \\
+J-5 &\small{Christos Roumpos, Panagiotis Partsinevelos, \underline{Konstantinos Makantasis}, Zacharias Agioutantis, and Antigoni Vlachou. ''The optimal location of the distribution point of the belt conveyor system in continuous surface mining operations''. \textit{Simulation Modelling Practice and Theory, vol.47, pp.19-27, Elsevier, 2014}}\\
+ \multicolumn{2}{c}{} \\
+J-4 &\small{Panagiotis Partsinevelos, Konstantinos Papadakis, and \underline{Konstantinos} \underline{Makantasis}. ''Spatiotemporal graph queries on geographic databases under a conceptual abstraction scale''. \textit{Geospatial Information Science, vol.17(2), pp.110–118, 2014}}\\
+ \multicolumn{2}{c}{} \\
+J-3 &\small{Marinos Ioannides, \underline{Konstantinos Makantasis}, et. al. ''Online 4D reconstruction using multi-images available under Open Access''. \textit{ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, II-5 W, vol.1, pp.169-174, 2013}}\\
+ \multicolumn{2}{c}{} \\  
+J-2 &\small{Panagiotis Partsinevelos, Elias Stamboliadis, and \underline{Konstantinos Makantasis}. ''Image based mineral liberation simulation incorporating experimental grinding models''. \textit{CanadianMetallurgicalQuarterly, vol.51(4), pp.383-389, 2012}}\\
+ \multicolumn{2}{c}{} \\ 
+J-1 &\small{\underline{Konstantinos Makantasis} and Anastasios Doulamis. ''3d measures computed in monocular camera system and svm-based classifier for humans fall detection''. \textit{TMC Academic Journal, vol.7(2), pp.1-14, 2011}}\\
+ \multicolumn{2}{c}{} \\ 
+ 
+ 
+\textbf{Conferences} &  \\
+C-29 &\small{\underline{Konstantinos Makantasis}, Antonios Liapis, and Georgios N. Yannakakis. ''From Pixels to Affect: A Study on Games and Player Experience''. in \textit{8th International Conference on Affective Computing and Intelligent Interaction (ACII), IEEE, 2019}}\\
+\multicolumn{2}{c}{} \\
+C-28 &\small{\underline{Konstantinos Makantasis}, Athanasios Voulodimos, Anastasios Doulamis, Nikolaos Doulamis, and Ioannis Georgoulas. ''Hyperspectral Image Classification with Tensor-Based Rank-R Learning Models''. in \textit{International Conference on Image Processing (ICIP), pp. 3148-3125, IEEE, 2019}}\\
+\multicolumn{2}{c}{} \\
+C-27 &\small{Antonios Liapis, Daniel Karavolos, \underline{Konstantinos Makantasis}, Konstantinos Sfikas and Georgios N. Yannakakis. ''Fusing Level and Ruleset Features for Multimodal Learning of Gameplay Outcomes''. in \textit{Conference on Games (CoG-19), IEEE, 2019}}\\
+\multicolumn{2}{c}{} \\
+C-26 &\small{\underline{Konstantinos Makantasis}, Maria Kontorinaki, and Ioannis Nikolos. ''A Deep Reinforcement Learning Driving Policy for Autonomous Road Vehicles''. in \textit{8th Symposium of the European Association for Research in Transportation (hEART), 2019}}\\
+\multicolumn{2}{c}{} \\
+C-25 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, Nikolaos Doulamis, and Athanasios Voulodimos. ''Common Mode Patterns for Supervised Tensor Subspace Learning''. in \textit{International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 2927-2931, IEEE, 2019}}\\
+\multicolumn{2}{c}{} \\
+C-24 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, Nikolaos Doulamis, Antonis Nikitakis, and Athanasios Voulodimos. ''Tensor-based Nonlinear Classifier for High-order Data Analysis''. in \textit{International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp.2221-2225, IEEE, 2018}}\\
+ \multicolumn{2}{c}{} \\
+C-23 &\small{\underline{Konstantinos Makantasis} Nikolaos Doulamis, and Athanasios Voulodimos. ''Recognizing Buildings through Deep Learning: A Case Study on Half-timbered Framed Buildings in Calw City''. in \textit{International conference on Computer Vision Theory and Applications (VISIGRAPP), pp. 444-450, 2017}}\\
+ \multicolumn{2}{c}{} \\
+C-22 &\small{Eftychios Protopapadakis, \underline{Konstantinos Makantasis}, George Kopsiaftis, Nikolaos Doulamis, and Aggelos Amditis. ''Crack Identification Via User Feedback, Convolutional Neural Networks and Laser Scanners for Tunnel Infrastructures''. in \textit{International conference on Computer Vision Theory and Applications (VISIGRAPP), pp. 725-734, 2017}}\\
+ \multicolumn{2}{c}{} \\
+C-21 &\small{\underline{Konstantinos Makantasis}, Yannis Katsaros, Anastasios Doulamis, and Matthaios Bimpas. ''Online indexing structure for big image data used for 3d reconstruction''. in \textit{Proceedings of the 11th Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications - Volume 4: RGB-SpectralImaging, (VISIGRAPP), pp. 705–714, 2016}}\\
+ \multicolumn{2}{c}{} \\
+C-20 &\small{Eftychios Protopapadakis, Christos Stentoumis, Nikolaos Doulamis, Anastasios Doulamis, \underline{Konstantinos Makantasis}, Konstantinos Loupos, George Kopsiautis, and Aggelos Amditis. ''Autonomous robotic inspection in tunnels''. in \textit{XXIII International Society for Photogrammetry and Remote Sensing (ISPRS), vol.3(5), 2016}}\\
+ \multicolumn{2}{c}{} \\
+C-19 &\small{Antonis Nikitakis, Ioannis Papaefstathiou, \underline{Konstantinos Makantasis}, and Anastasios Doulamis. ''A novel background subtraction scheme for in-camera acceleration in thermal imagery''. in \textit{Design, Automation \& Test in Europe Conference \& Exhibition (DATE), pp. 1497-1500. IEEE, 2016}}\\
+ \multicolumn{2}{c}{} \\
+C-18 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, Nikolaos Doulamis, and Konstantinos Psychas. ''Deep learning based human behaviour recognition in industrial workflows''. in \textit{International Conference on Image Processing (ICIP), pp.1609-1613, IEEE,  2016}}\\
+ \multicolumn{2}{c}{} \\
+C-17 &\small{\underline{Konstantinos Makantasis}, Konstantinos Karantzalos, Anastasios Doulamis, and Nikolaos Doulamis. ''Deep supervised learning for hyperspectral data classification through convolutional neural networks''. in \textit{International Geoscience and Remote Sensing Symposium (IGARSS), pp. 4959–4962, IEEE, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-16 &\small{\underline{Konstantinos Makantasis}, Konstantinos Karantzalos, Anastasios Doulamis, and Konstantinos Loupos. ''Deep learning-based man-made object detection from hyperspectral data''. in \textit{Advances in Visual Computing, pp. 717–727. Springer, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-15 &\small{\underline{Konstantinos Makantasis}, Eftychios Protopapadakis, Anastasios Doulamis, Nikolaos Doulamis, and Constantinos Loupos. ''Deep convolutional neural networks for efficient vision based tunnel inspection''. in \textit{International Conference onI ntelligent Computer Communication and Processing (ICCP), pp. 335–342. IEEE, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-14 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, and Konstantinos Loupos. ''Variational inference for background subtraction in infrared imagery''. in \textit{Advances in Visual Computing, pp. 693-705. Springer, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-13 &\small{Nikolaos Doulamis, Anastasios Doulamis, \underline{Konstantinos Makantasis}, Konstantinos Karantzalos, and Konstantinos Loupos. ''Micro-scale thermal behavioral analysis for active evacuation routes''. in \textit{Proceedings of the 8th  International Conference on PErvasive Technologies Related to Assistive Environments (PETRA), ACM, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-12 &\small{Anastasios Doulamis, Nikolaos Doulamis, \underline{Konstantinos Makantasis}, and Michael Klein. ''A 4D Virtual/Augmented Reality Viewer Exploiting Unstructured Web-based Image Data''. in \textit{International conference on Computer Vision Theory and Applications (VISIGRAPP), pp. 631-639, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-11 &\small{Eftychios Protopapadakis, \underline{Konstantinos Makantasis}, and Nikolaos Doulamis. ''Maritime Targets Detection from Ground Cameras Exploiting Semi-supervised Machine Learning''. in \textit{International conference on Computer Vision Theory and Applications (VISIGRAPP), pp. 583-594, 2015}}\\
+ \multicolumn{2}{c}{} \\
+C-10 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, Nikolaos Doulamis, Marinos Ioannides, and Nikolaos Matsatsinis. ''Content-based filtering for fast 3d reconstruction from unstructured web-based image data''. in \textit{Digital Heritage. Progress in Cultural Heritage: Documentation, Preservation, and Protection, pp. 91-101. Springer, 2014}}\\
+ \multicolumn{2}{c}{} \\
+C-9 &\small{Anastasios Doulamis, \underline{Konstantinos Makantasis}, et. al. ''4D reconstruction of the past''. in \textit{First International Conference on Remote Sensing and Geoinformation of the Environment (RSCy2013), vol. 8795, 2013}}\\
+ \multicolumn{2}{c}{} \\
+C-8 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, and Nikolaos Doulamis. ''A non-parametric unsupervised approach for content based image retrieval and clustering''. in \textit{Proceedings of the 4th ACM/IEEE international workshop on Analysis and retrieval of tracked events and motion in imagery stream, pp. 33-40. ACM, 2013}}\\
+ \multicolumn{2}{c}{} \\
+C-7 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, and Nikolaos Doulamis. ''Vision-based maritime surveillance system using fused visual attention maps and online adaptable tracker''. in \textit{14th International Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS), pp. 1-4. IEEE, 2013}}\\
+ \multicolumn{2}{c}{} \\
+C-6 &\small{Yiannis Agadakos, \underline{Konstantinos Makantasis}, Panagiotis Partsinevelos, George Papadakis, and Anastasios Doulamis. ''Safe urban growth: An integrated ICT solution for unstandardized and distributed information handling''. in \textit{14th International Symposium and Workshops on World of Wireless, Mobile and Multimedia Networks (WoWMoM), pp. 1-6. IEEE, 2013}}\\
+ \multicolumn{2}{c}{} \\
+C-5 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, and Nikolaos Matsatsinis. ''3d measures computed in monocular camera system for fall detection''. in \textit{Proceedings of the 2nd International Conference on Advanced Communications and Computation (INFOCOMP), pp. 68-73, 2012}}\\
+ \multicolumn{2}{c}{} \\
+C-4 &\small{\underline{Konstantinos Makantasis}, Anastasios Doulamis, and Nikolaos Matsatsinis. ''Student-t background modeling for persons’ fall detection through visual cues''. in \textit{13th International Workshop on Image Analysis for Multimedia Interactive Services (WIAMIS), pp. 1-4. IEEE, 2012}}\\
+ \multicolumn{2}{c}{} \\
+C-3 &\small{Eftychios Protopapadakis, Anastasios Doulamis, \underline{Konstantinos Makantasis}, and Athanasios Voulodimos. ''A semisupervised approach for industrial workflow recognition''. in \textit{Proceedings of the Second International Conference on Advanced Communications and Computation (INFOCOMP), pp.21-26, 2012}}\\
+ \multicolumn{2}{c}{} \\
+C-2 &\small{\underline{Konstantinos Makantasis}, Eftychios Protopapadakis, Anastasios Doulamis, Lazaros Grammatikopoulos, and Christos Stentoumis. ''Monocular camera fall detection system exploiting 3d measures: a semi-supervised learning approach''. in \textit{European Conference on Computer Vision (ECCV). Workshops and Demonstrations, pp. 81-90. Springer, 2012}}\\
+ \multicolumn{2}{c}{} \\
+C-1 &\small{Anastasios Doulamis and \underline{Konstantinos Makantasis}. ''Iterative scene learning in visually guided persons' falls detection''. in \textit{19th European Signal Processing Conference (EUSIPCO), pp. 779-783. IEEE, 2011}}\\
+ \multicolumn{2}{c}{} \\
+
+
+%\textbf{Under submission} &  \\
+%S-1 &\small{\underline{Konstantinos Makantasis}, Alexandros Georgogiannis, Athanasios Voulodimos, Ioannis Georgoulas, Anastasios Doulamis, and Nikolaos Doulamis. ''Rank-R FNN: A Tensor-Based Learning Model for High-Order Data Classification''. submitted to \textit{IEEE Transactions on Neural Networks and Learning Systems, 2019}}\\
+%\multicolumn{2}{c}{} \\
+
+
+%\textbf{Under preparation} &  \\
+%S-1 &\small{\underline{Konstantinos Makantasis}, Alexandros Georgogiannis, Athanasios Voulodimos, Ioannis Georgoulas, Anastasios Doulamis, and Nikolaos Doulamis. ''Rank-R FNN: A Tensor-Based Learning Model for High-Order Data Classification''. submitted to \textit{IEEE Transactions on Neural Networks and Learning Systems, 2019}}\\
+%\multicolumn{2}{c}{} \\
+\end{longtable}
+
+
+%\section{Academic References}
+%
+%\begin{tabular}{rl}
+%	\textsc{Name:} & \textbf{Anastasios Doulamis} \\
+%	\textsc{Position:}   & Assistant Professor (PhD Advisor)\\
+%	\textsc{Institute:}    & National Technical University of Athens, Athens, Greece\\ 
+%	& School of Rural and Surveying Engineering \\
+%	\textsc{Email:}     & \href{mailto:adoulam@cs.ntua.gr}{adoulam@cs.ntua.gr} \\
+%\end{tabular}
+%
+%\begin{tabular}{rl}
+%	\textsc{Name:} & \textbf{Markos Papageorgiou} \\
+%	\textsc{Position:}   & Professor \\
+%	\textsc{Institute:}    & Technical University of Crete, Greece\\ 
+%	& School of Production Engineering and Management \\
+%	\textsc{Email:}     & \href{mailto:markos@dssl.tuc.gr}{markos@dssl.tuc.gr} \\
+%\end{tabular}
+%
+%\begin{tabular}{rl}
+%	\textsc{Name:} & \textbf{Georgios N. Yannakakis} \\
+%	\textsc{Position:}   & Associate Professor\\ %& Professor \\
+%	\textsc{Institute:}    & Technical University of Crete, Greece\\ %& University of Malta, Malta\\ 
+%	& School of Electrical and Computer Engineering \\%& Institute of Digital Games \\
+%	\textsc{Email:}     & \href{mailto:georgios.yannakakis@um.edu.mt}{georgios.yannakakis@um.edu.mt} \\
+%\end{tabular}
+%
+%\begin{tabular}{rl}
+%	\textsc{Name:} & \textbf{Konstantinos Karantzalos} \\
+%	\textsc{Position:}   & Associate Professor \\
+%	\textsc{Institute:}    & National Technical University of Athens, Athens, Greece\\ 
+%	& School of Rural and Surveying Engineering \\
+%	\textsc{Email:}     & \href{mailto:karank@central.ntua.gr}{karank@central.ntua.gr} \\
+%\end{tabular}
+%
+%\begin{tabular}{rl}
+%	\textsc{Name:} & \textbf{Athanasios Voulodimos} \\
+%	\textsc{Position:}   & Assistant Professor \\
+%	\textsc{Institute:}    & University of West Attica, Greece\\ 
+%	&Department of Informatics \& Computer Engineering \\
+%	\textsc{Email:}     & \href{mailto:avoulod@uniwa.gr }{avoulod@uniwa.gr } \\
+%\end{tabular}
+
+\end{document}
